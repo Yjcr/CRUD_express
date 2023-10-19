@@ -1,0 +1,19 @@
+<--server.js-->
+{(line 6)
+                        <<<app.set('port',process.env.PORT || 9000)>>>
+
+Esta linea de codigo nos ahorra que a la hora de darle el port al server la tome directamente
+y mas importante, en el despliegue si el port 9000 no esta diponible que ocupe el puerto automaticamente
+que le de el despliegue
+
+}
+
+
+
+
+<--in mySQL Workbench-->
+{(error en conexion a la base de datos con node), gracias Indu que habla mal ingles
+SOLUCION:
+alter user 'root'@'localhost' identified with mysql_native_password by 'rootpass';
+esto va escrito en la en un query en la bd
+}
